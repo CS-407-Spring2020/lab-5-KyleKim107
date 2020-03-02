@@ -63,7 +63,7 @@ public class SecondActivity extends AppCompatActivity {
         //6. Add onItemClicklister for listView item, anote in out case.
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) { // When the user click the List view
                 //Initialise intent to take user to third activity (Note activity in this case).
                 Intent intent = new Intent(getApplicationContext(), NoteActivity.class);
                 intent.putExtra("noteid" , position);
@@ -95,7 +95,7 @@ public class SecondActivity extends AppCompatActivity {
 
         }
 
-        if(item.getItemId() == R.id.note){
+        if(item.getItemId() == R.id.note){ // When the user click menu
             Intent intent = new Intent( this , NoteActivity.class);
             startActivity(intent);
             return true;

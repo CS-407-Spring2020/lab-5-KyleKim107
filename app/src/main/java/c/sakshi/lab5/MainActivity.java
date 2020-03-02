@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     SharedPreferences sharedpreferences;
     public static String usernameKey = "username";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
